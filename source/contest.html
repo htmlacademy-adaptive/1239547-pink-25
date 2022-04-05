@@ -46,49 +46,49 @@
 
       <section class="contest">
         <h2 class="visually-hidden">Форма заявки на конкурс</h2>
-        <div class="contest__lead">
+        <p class="contest__lead">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-        </div>
+        </p>
         <form class="contest-form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="contest-form__name">
+          <fieldset class="contest-form__name">
             <label class="contest-form__label" for="last-name">Фамилия</label>
             <input class="contest-form__field" type="text" id="last-name" name="lastName" placeholder="Укажите фамилию *" required>
             <label class="contest-form__label" for="first-name">Имя</label>
             <input class="contest-form__field" type="text" id="first-name" name="firstName" placeholder="Введите ваше имя *" required>
             <label class="contest-form__label" for="middle-name">Отчество</label>
             <input class="contest-form__field" type="text" id="middle-name" name="middleName" placeholder="Ну и отчество тоже">
-          </div>
+          </fieldset>
           <fieldset class="contest-form__achievement achievement">
             <legend class="contest-form__title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="achievement-list">
               <li class="achievement-list__item">
-                <input class="contest-form__field" type="checkbox" name="sharkSelfie" id="shark-selfie" checked>
-                <label class="contest-form__label" for="shark-selfie">Сделал селфи с акулой</label>
+                <input class="contest-form__checkbox" type="checkbox" name="sharkSelfie" id="shark-selfie" checked>
+                <label class="contest-form__label-checkbox" for="shark-selfie">Сделал селфи с акулой</label>
               </li>
               <li class="achievement-list__item">
-                <input class="contest-form__field" type="checkbox" name="getBurn" id="get-burn" checked>
-                <label class="contest-form__label" for="get-burn">Обгорел на пляже</label>
+                <input class="contest-form__checkbox" type="checkbox" name="getBurn" id="get-burn" checked>
+                <label class="contest-form__label-checkbox" for="get-burn">Обгорел на пляже</label>
               </li>
               <li class="achievement-list__item">
-                <input class="contest-form__field" type="checkbox" name="seeNorris" id="see-norris">
-                <label class="contest-form__label" for="see-norris">Видел Чака Норриса</label>
+                <input class="contest-form__checkbox" type="checkbox" name="seeNorris" id="see-norris">
+                <label class="contest-form__label-checkbox" for="see-norris">Видел Чака Норриса</label>
               </li>
               <li class="achievement-list__item">
-                <input class="contest-form__field" type="checkbox" name="buySouvenirs" id="buy-souvenirs">
-                <label class="contest-form__label" for="buy-souvenirs">Накупил сувениров</label>
+                <input class="contest-form__checkbox" type="checkbox" name="buySouvenirs" id="buy-souvenirs">
+                <label class="contest-form__label-checkbox" for="buy-souvenirs">Накупил сувениров</label>
               </li>
               <li class="achievement-list__item">
-                <input class="contest-form__field" type="checkbox" name="holdTower" id="hold-tower" checked>
-                <label class="contest-form__label" for="hold-tower">Удержал башню</label>
+                <input class="contest-form__checkbox" type="checkbox" name="holdTower" id="hold-tower" checked>
+                <label class="contest-form__label-checkbox" for="hold-tower">Удержал башню</label>
               </li>
               <li class="achievement-list__item">
-                <input class="contest-form__field" type="checkbox" name="trashHotel" id="trash-hotel">
-                <label class="contest-form__label" for="trash-hotel">Разгромил отель</label>
+                <input class="contest-form__checkbox" type="checkbox" name="trashHotel" id="trash-hotel">
+                <label class="contest-form__label-checkbox" for="trash-hotel">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="contest-form__contact contact">
-            <legend class="contest-form__title">Контактная информация</legend>
+            <legend class="contest-form__title contest-form__title--hidden">Контактная информация</legend>
             <ul class="contact-list">
               <li class="contact-list__item">
                 <input class="contest-form__field" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
@@ -104,16 +104,16 @@
             <legend class="contest-form__title">С каким приложением путешествовали?</legend>
             <ul class="platform-list">
               <li class="platform-list__item">
-                <input class="contest-form__field" type="radio" name="iOS" id="ios" checked>
-                <label class="contest-form__label" for="ios">Pink для iOS</label>
+                <input class="contest-form__radio" type="radio" name="iOS" id="ios" checked>
+                <label class="contest-form__label-radio" for="ios">Pink для iOS</label>
               </li>
               <li class="platform-list__item">
-                <input class="contest-form__field" type="radio" name="android" id="android">
-                <label class="contest-form__label" for="android">Pink на Android</label>
+                <input class="contest-form__radio" type="radio" name="android" id="android">
+                <label class="contest-form__label-radio" for="android">Pink на Android</label>
               </li>
               <li class="platform-list__item">
-                <input class="contest-form__field" type="radio" name="windows" id="windows">
-                <label class="contest-form__label" for="windows">Windows Phone</label>
+                <input class="contest-form__radio" type="radio" name="windows" id="windows">
+                <label class="contest-form__label-radio" for="windows">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
@@ -183,7 +183,7 @@
       </div>
     </footer>
 
-    <section class="modal modal__error">
+    <section class="modal modal-error">
       <h2 class="visually-hidden">Сообщение об ошибке</h2>
       <p class="modal__title">Что-то пошло не так!</p>
       <p class="modal__text">
@@ -195,7 +195,7 @@
       </div>
     </section>
 
-    <section class="modal modal__success">
+    <section class="modal modal-success">
       <h2 class="visually-hidden">Сообщение о принятии заявки</h2>
       <p class="modal__title">Ваша заявка отправлена</p>
       <p class="modal__text">
